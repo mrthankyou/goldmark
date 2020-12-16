@@ -54,13 +54,13 @@ func (n *FootnoteBacklink) Dump(source []byte, level int) {
 	gast.DumpHelper(n, source, level, m, nil)
 }
 
-// KindFootnoteBacklink is a NodeKind of the FootnoteBacklink node.
-var KindFootnoteBacklink = gast.NewNodeKind("FootnoteBacklink")
-
-// Kind implements Node.Kind.
-func (n *FootnoteBacklink) Kind() gast.NodeKind {
-	return KindFootnoteBacklink
-}
+// // KindFootnoteBacklink is a NodeKind of the FootnoteBacklink node.
+// var KindFootnoteBacklink = gast.NewNodeKind("FootnoteBacklink")
+//
+// // Kind implements Node.Kind.
+// func (n *FootnoteBacklink) Kind() gast.NodeKind {
+// 	return KindFootnoteBacklink
+// }
 
 // NewFootnoteBacklink returns a new FootnoteBacklink node.
 func NewFootnoteBacklink(index int) *FootnoteBacklink {

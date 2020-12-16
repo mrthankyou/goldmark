@@ -500,7 +500,7 @@ func NewFootnoteHTMLRenderer(opts ...FootnoteOption) renderer.NodeRenderer {
 // RegisterFuncs implements renderer.NodeRenderer.RegisterFuncs.
 func (r *FootnoteHTMLRenderer) RegisterFuncs(reg renderer.NodeRendererFuncRegisterer) {
 	reg.Register(ast.KindFootnoteLink, r.renderFootnoteLink)
-	reg.Register(ast.KindFootnoteBacklink, r.renderFootnoteBacklink)
+	// reg.Register(ast.KindFootnoteBacklink, r.renderFootnoteBacklink)
 	reg.Register(ast.KindFootnote, r.renderFootnote)
 	reg.Register(ast.KindFootnoteList, r.renderFootnoteList)
 }
